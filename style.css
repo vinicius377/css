@@ -1,0 +1,25 @@
+.box{
+    width:3rem;
+    height:3rem;
+    background: #3532c9;
+    animation-duration: 5s;
+}
+
+.animation{
+    animation: animation 4s infinite forwards steps(5 , jump-start);
+}
+
+@keyframes animation{
+    0% {
+        margin-left:0;
+        background: red;
+    }
+    50% {
+        margin-left:5rem;
+        background: green;
+    }
+    100%{
+        margin-left:0rem;
+        background: blue;
+    }
+}

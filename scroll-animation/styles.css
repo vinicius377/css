@@ -1,0 +1,82 @@
+* {
+    padding: 0;;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+}
+
+section {
+    height: 175vh;
+    background: url(./assets/pexels-finn-semmer-19166222.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec2 {
+    height: 100vh;
+    background: url(./assets/pexels-ákos-szűcs-20367982.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    position: relative;
+}
+
+.text h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    background: url(./assets/pexels-ákos-szűcs-20367982.jpg);
+    background-attachment: fixed;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.layer {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    left: 0;
+    display: flex;
+}
+
+.title {
+    font-size: 7rem;
+    max-width: 26rem;
+    margin-left: 10rem;
+    display: flex;
+}
+
+.layer::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 80px;
+    height: 200px;
+    background-color: #222;
+    box-shadow: 0 calc(90vh - 100px) 0 #222;
+}
+
+.plane {
+    position: absolute;
+    left: -55vh;
+    height: 100vh;
+}
+.titleBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

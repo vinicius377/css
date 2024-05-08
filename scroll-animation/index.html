@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="layer">
+        <div class="titleBox">
+            <h4 class="title">Vem decolar conosco!</h4>
+        </div>
+        <img src="./assets//plane.png" draggable="false" class="plane" alt="aviao">
+    </div>
+    <section></section>
+    <div class="text">
+        <h4>Hello world</h4>
+    </div>
+    <section class="sec2"></section>
+
+    <script>
+        const layer = document.querySelector('.layer');
+        console.log("🚀 ~ layer:", layer)
+
+        window.addEventListener('scroll', () =>  {
+            const value = window.scrollY;
+            layer.style.left = `${value * 2}px`
+        })
+    </script>
+</body>
+</html>
